@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"
+                card_view:layout_constraintTop_toTopOf="@+id/img_item_photo"
+                android:textStyle="bold"
+                tools:text="@string/heroes_name"/>
+
+            <TextView
+                android:id="@+id/tv_item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Description"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                card_view:layout_constraintBottom_toBottomOf="@+id/img_item_photo"
+                card_view:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+                card_view:layout_constraintStart_toStartOf="@+id/tv_item_name"
+                card_view:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+                android:layout_marginTop="4dp"
+                tools:text="@string/description"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
