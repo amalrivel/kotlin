@@ -15,6 +15,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         val rvFullOperator:ImageView = findViewById(R.id.img_item_full_photo)
+        val rvOperatorFaction:ImageView = findViewById(R.id.img_item_photo_faction)
 
         val operator = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_ARKNIGHTS, Operator::class.java)
@@ -25,6 +26,7 @@ class DetailActivity : AppCompatActivity() {
 
         if (operator != null) {
             rvFullOperator.setImageResource(operator.fullPhoto)
+            rvOperatorFaction.setImageResource(operator.faction)
         }
     }
 }
