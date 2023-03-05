@@ -1,5 +1,6 @@
 package com.example.arknightsguide
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -45,9 +46,11 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataPhotoFaction = resources.obtainTypedArray(R.array.data_photo_faction)
+        val dataFullPhoto = resources.obtainTypedArray(R.array.data_full_photo)
         val listOperator = ArrayList<Operator>()
         for (i in dataName.indices) {
-            val operator = Operator(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+            val operator = Operator(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataPhotoFaction.getResourceId(i, -1), dataFullPhoto.getResourceId(i, -1))
             listOperator.add(operator)
         }
         return listOperator
@@ -65,6 +68,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedOperator(operator: Operator) {
-        Toast.makeText(this, "Kamu memilih " + operator.name, Toast.LENGTH_SHORT).show()
+        val intent = Intent(this@MainActivity, DetailActivity::class.java)
+        intent.putExtra(DetailActivity.EXTRA_ARKNIGHTS, operator)
+        startActivity(intent)
+//        Toast.makeText(this, "Kamu memilih " + operator.name, Toast.LENGTH_SHORT).show()
     }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp">
+          <ImageView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:scaleType="matrix"
+              android:src="@drawable/bg" />
+          <ImageView
+              android:id="@+id/img_item_full_photo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:src="@drawable/fcantabile"/>
+        </RelativeLayout>
+      </LinearLayout>
+  </ScrollView>
+</LinearLayout>

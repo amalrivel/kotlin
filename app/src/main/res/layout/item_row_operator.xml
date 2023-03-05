@@ -15,12 +15,22 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/img_item_photo"
+        <RelativeLayout
             android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars" />
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/img_item_photo_faction"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/rhodes" />
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/cantabile" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

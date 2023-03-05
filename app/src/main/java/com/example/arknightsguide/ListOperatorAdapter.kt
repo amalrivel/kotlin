@@ -20,8 +20,9 @@ class ListOperatorAdapter(private val listOperator: ArrayList<Operator>) : Recyc
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, description, photo) = listOperator[position]
+        val (name, description, photo, photoFaction) = listOperator[position]
         holder.imgPhoto.setImageResource(photo)
+        holder.imgPhotoFaction.setImageResource(photoFaction)
         holder.tvName.text = name
         holder.tvDescription.text = description
         holder.itemView.setOnClickListener {
@@ -34,6 +35,7 @@ class ListOperatorAdapter(private val listOperator: ArrayList<Operator>) : Recyc
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
+        val imgPhotoFaction: ImageView = itemView.findViewById(R.id.img_item_photo_faction)
         val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
     }

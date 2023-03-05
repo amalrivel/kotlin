@@ -7,5 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class Operator(
     val name: String,
     val description: String,
-    val photo: Int
+    val photo: Int,
+    val faction: Int,
+    val fullPhoto: Int
 ) : Parcelable
