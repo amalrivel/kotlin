@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".DetailActivity">
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fabShare"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_margin="20dp"
+      app:tint="@color/white"
+      app:borderWidth="0dp"
+      android:src="@drawable/ic_share"
+      android:backgroundTint="@color/purple_200"/>
 
   <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent">
       <LinearLayout
           android:layout_width="match_parent"
-          android:layout_height="wrap_content">
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="600dp">
@@ -27,10 +40,65 @@
               tools:src="@drawable/fcantabile"/>
             <ImageView
                 android:id="@+id/img_item_photo_faction"
+                android:layout_margin="10dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 tools:src="@drawable/rhodes"/>
+            <ImageView
+                android:id="@+id/img_item_photo_class"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                tools:src="@drawable/class_vanguard" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                tools:text="Cantabile"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="60dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Archetype"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/nunito_bold" />
+
+            <TextView
+                android:id="@+id/operatorClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_reguler"
+                tools:text="Agent"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Traits"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/nunito_bold" />
+
+          <TextView
+              android:id="@+id/operatorTrait"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/nunito_reguler"
+              tools:text="Has reduced Redeployment Time, can use ranged attacks"/>
+        </LinearLayout>
+
       </LinearLayout>
   </ScrollView>
-</LinearLayout>
+</RelativeLayout>

@@ -48,9 +48,10 @@ class MainActivity : AppCompatActivity() {
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val dataPhotoFaction = resources.obtainTypedArray(R.array.data_photo_faction)
         val dataFullPhoto = resources.obtainTypedArray(R.array.data_full_photo)
+        val dataPhotoClass = resources.obtainTypedArray(R.array.data_photo_class)
         val listOperator = ArrayList<Operator>()
         for (i in dataName.indices) {
-            val operator = Operator(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataPhotoFaction.getResourceId(i, -1), dataFullPhoto.getResourceId(i, -1))
+            val operator = Operator(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataPhotoFaction.getResourceId(i, -1), dataFullPhoto.getResourceId(i, -1), dataPhotoClass.getResourceId(i, -1))
             listOperator.add(operator)
         }
         return listOperator

@@ -58,4 +58,15 @@
         <item>@drawable/sukarno</item>
         <item>@drawable/supomo</item>
     </integer-array>
+    <integer-array name="data_photo_class">
+        <item>@drawable/class_vanguard</item>
+        <item>@drawable/ahmad_yani</item>
+        <item>@drawable/bung_tomo</item>
+        <item>@drawable/gatot_subroto</item>
+        <item>@drawable/ki_hadjar_dewantara</item>
+        <item>@drawable/mohammad_hatta</item>
+        <item>@drawable/sudirman</item>
+        <item>@drawable/sukarno</item>
+        <item>@drawable/supomo</item>
+    </integer-array>
 </resources>

@@ -4,6 +4,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 
 class DetailActivity : AppCompatActivity() {
     companion object {
@@ -16,6 +17,8 @@ class DetailActivity : AppCompatActivity() {
 
         val rvFullOperator:ImageView = findViewById(R.id.img_item_full_photo)
         val rvOperatorFaction:ImageView = findViewById(R.id.img_item_photo_faction)
+        val rvOperatorClass:ImageView = findViewById(R.id.img_item_photo_class)
+        val rvName:TextView = findViewById(R.id.name)
 
         val operator = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_ARKNIGHTS, Operator::class.java)
@@ -27,6 +30,8 @@ class DetailActivity : AppCompatActivity() {
         if (operator != null) {
             rvFullOperator.setImageResource(operator.fullPhoto)
             rvOperatorFaction.setImageResource(operator.faction)
+            rvOperatorClass.setImageResource(operator.operatorClass)
+            rvName.text = operator.name
         }
     }
 }
