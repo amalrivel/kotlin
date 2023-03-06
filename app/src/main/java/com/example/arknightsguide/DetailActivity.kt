@@ -39,7 +39,9 @@ class DetailActivity : AppCompatActivity() {
             @Suppress("DEPRECATION")
             intent.getParcelableExtra(EXTRA_ARKNIGHTS)
         }
-        btnShare.setOnClickListener { shareContent() }
+
+        btnShare.setOnClickListener { shareContent(operator) }
+
         rvReference.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(rvReference.text.toString()))
             startActivity(intent)
@@ -59,11 +61,13 @@ class DetailActivity : AppCompatActivity() {
         }
     }
 
-    private fun shareContent() {
+    private fun shareContent(operator: Operator?) {
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "text/plain"
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject")
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "Content")
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "ARKNIGHTS GUIDE")
+        if (operator != null) {
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Arknights Guide ${operator.name}.\nRead more in ${operator.reference}")
+        }
         startActivity(Intent.createChooser(shareIntent, "Share Using"))
     }
 
