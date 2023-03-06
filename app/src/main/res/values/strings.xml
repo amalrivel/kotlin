@@ -10,19 +10,19 @@
     <string name="link_github">https://github.com/amalrivel</string>
     <string-array name="data_name">
         <item>Cantabile</item>
-        <item>Ahmad Yani</item>
-        <item>Sutomo</item>
-        <item>Gatot Soebroto</item>
-        <item>Ki Hadjar Dewantara</item>
-        <item>Mohammad Hatta</item>
-        <item>Soedirman</item>
-        <item>Soekarno</item>
-        <item>Soepomo</item>
+        <item>Minimalist</item>
+        <item>Pozëmka</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="data_description">
         <item>A woman who grew up in the midst of disorder, with hopes of seeking a new direction here.</item>
-        <item></item>
-        <item></item>
+        <item>Durin architectural designer Minimalist, hauled surface-side by Gavial.</item>
+        <item>Sniper Operator Pozëmka, the one who cherished Zeruertza most of all Zeruertzans.</item>
         <item></item>
         <item></item>
         <item></item>
@@ -32,8 +32,8 @@
     </string-array>
     <string-array name="data_archetype">
         <item>Agent</item>
-        <item></item>
-        <item></item>
+        <item>Drone / Mech-Accord</item>
+        <item>Close Range / Heavyshooter</item>
         <item></item>
         <item></item>
         <item></item>
@@ -43,8 +43,8 @@
     </string-array>
     <string-array name="data_traits">
         <item>Has reduced Redeployment Time, can use ranged attacks</item>
-        <item></item>
-        <item></item>
+        <item>Controls a Drone to deal Arts damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operators ATK)</item>
+        <item>High accuracy point-blank shot</item>
         <item></item>
         <item></item>
         <item></item>
@@ -54,7 +54,8 @@
     </string-array>
     <string-array name="data_operator_overview">
         <item>Cantabile is extremely tight-lipped about her past, and most of the information about her is sealed in Rhodes Island’s records. Despite her best efforts, however, some clear indications slip out—for example, she had a panic attack upon seeing children playing with Metal Crab pets because she thought the children would be instructed to kill their pets later down the line. Thankfully, being part of Rhodes Island has been therapeutic for her, and she has even adopted a Metal Crab of her own!\n\nDespite being opposed to violence, Cantabile has decided Rhodes Island is worth fighting for, so she has agreed to deploy as the first 5* Agent Vanguard. This archetype is deployed on ground tiles but has ranged attacks (albeit in a rather short 1x2 range) and has greatly reduced redeployment time. Cantabile’s specialty is gaining DP when she attacks, but only while her Skills are active.\n\nThere is an interesting push and pull at play with Cantabile’s Talent, All-Rounder, which gives her bonus ATK when Blocking an enemy and bonus ASPD when she isn’t. This may not seem like a large difference, but it stands out when you look at her Skills. Her S1, Bystander, gives Cantabile a large ATK buff for several seconds upon deployment and—more notably—causes her to generate DP with every attack she makes for the duration. As such, when using Bystander, Cantabile wants to make sure she isn’t Blocking anything. Bonus ASPD means more attacks in the duration, which means more DP.\n\nOn the other hand, Cantabile’s Fleeting Light S2 is a manually activated Skill that runs on the ammo system. It gives Cantabile a much lower ATK buff, but also gives her bonus ASPD and Camouflage, while still generating DP with each attack. Because Fleeting Light runs on ammo, the All-Rounder ASPD buff is much less important; she’ll generate DP more quickly with faster attacks, but she won’t actually generate more DP. (On the other hand, Cantabile has low DEF and loses Camouflage while Blocking, so she may still want to stay out of direct combat for the duration.)\n\nCantabile may not sound that impressive on paper, but her various attributes are more than the sum of her parts. The keyword here is “versatile.” Cantabile’s attacks are fast (especially with Fleeting Light) and reasonably strong (especially with Bystander), and she can hit flying enemies. She generates DP very quickly so long as there are enemies for her to attack, and afterwards she can serve in a fast-redeploy role (soaking enemy abilities, changing positions rapidly, etc.) while still gathering more DP along the way.\n\nThe “as long as there are enemies for her to attack” part may sound like an issue, but in practice it’s remarkably lenient. Cantabile doesn’t have to kill her target to gain DP—she just needs to attack—and because Fleeting Light uses ammo, she doesn’t even have a time limit on her DP generation. (Bystander does have limitations, since it doesn’t use ammo and can only be triggered once per deployment, but the instant activation and high ATK buff can still be useful in some situations.) Cantabile wouldn’t be alive today if she wasn’t a flexible and adaptive person, and she delivers these qualities in spades when working in the Doctor’s service.</item>
-        <item></item>
+        <item>Minimalist is an OCD interior designer from the underground land of Durin (not to be confused with the Operator who goes by the codename Durin). As his codename suggests, Minimalist insists on a strict spartan design sense for his creations: clean lines with absolutely no clutter, tailored to suit the specific needs of the project. His design sense has also informed his combat style as a 5* Mech Accord Caster with an extremely simple, easy-to-use DPS strategy.\n\nHow simple are we talking? Minimalist’s Talent, Sudden Realization, has a chance to increase his damage when attacking, like a critical hit. His Divine Craftsmanship S2 causes his next attack to hit twice at increased power. “Two hits” means “two chances to activate Sudden Realization,” and the damage boost from Divine Craftsmanship stacks with the critical hit from Sudden Realization. (Multiple hits also builds the damage Trait of his drone more quickly.) Stack hits, do damage. That’s it! Simple, clean, and elegant—the Minimalist brand.\n\nOf course, with a kit so simple, it’s easy to see the weaknesses. Minimalist brings no support or utility to his team, and while his regular DPS output is good, he has no tricks to deal with bosses, elite enemies, or targets with high RES. Minimalist does exactly one job (baseline single-target Arts DPS) and nothing else… but he certainly deserves his professional pride about how well he handles that one job.</item>
+<!--        <item>“I didn't make myself clear enough when I asked a smith in Cragedge City to craft a pen for me, and... that's how I ended up with this crossbow.”\n\nPozyomka is a Lupo noblewoman who has become a representative for the underground city of Durin. There’s undoubtedly a story behind how a Lupo becomes a representative for the Durin, but Pozyomka isn’t going to be able to write it down. Recently she went out to commission a typewriter to pursue her literary interests, but somehow she came back with an automatic crossbow instead. Now she’s stuck being a 6* Heavyshooter Sniper who writes up ludicrous amounts of burst damage using her… er… “Typewriter.”\n\nAll of Pozyomka’s kit revolves around her “Typewriter” (and if you had a crossbow that could print books, yours probably would too). Her E0 Talent, Automatic Typewriter, allows her to deploy the “Typewriter” on the field as a separate unit that doesn’t take up a deployment slot. It powers up at E2, when Pozyomka’s Weakpoint Shorthand Talent causes the “Typewriter” to debuff the DEF of enemies it hits (with a greater effect if the “Typewriter” is deployed next to Pozyomka).\n\nThe “Typewriter” uses the same Skill as Pozyomka, which is the secret to her incredible burst damage potential. Her S2, Synopsis, passively halves the “Typewriter’s” redeploy time and can be actively triggered to cause Pozyomka and the “Typewriter” to fire three immediate shots with greatly increased damage. If one enemy is caught in all six shots, the results can be boneshattering. And yet this Skill pales in comparison to her S3, Mighty Pen. Mighty Pen combines increased attack range, faster attack interval, and a positively ridiculous damage buff that is further increased when attacking a target directly in front of the user. And it activates on both Pozyomka and her “Typewriter” at the same time. Let’s just say Pozyomka has a lot of obituaries to print up after using this Skill.\n\nIt's hard to find much to criticize about Pozyomka. She’s quite strong on her own, and her “Typewriter” essentially doubles her potential. Her Skills have very good uptime considering how strong they are, and the DEF debuff from Weakpoint Shorthand even gives her some team utility. The “Typewriter” cannot be attacked by enemies, so not only is it a potent buff to Pozyomka’s performance, it can be deployed deep into enemy territory to annihilate targets from complete safety. If you thought the pen was mightier than the sword, just wait until you see what the typewriter can do.</item>-->
         <item></item>
         <item></item>
         <item></item>
@@ -65,8 +66,8 @@
     </string-array>
     <string-array name="data_reference">
         <item>https://gamepress.gg/arknights/operator/cantabile</item>
-        <item></item>
-        <item></item>
+        <item>https://gamepress.gg/arknights/operator/minimalist</item>
+        <item>https://gamepress.gg/arknights/operator/pozemka</item>
         <item></item>
         <item></item>
         <item></item>
@@ -76,8 +77,8 @@
     </string-array>
     <integer-array name="data_photo">
         <item>@drawable/cantabile</item>
-        <item>@drawable/ahmad_yani</item>
-        <item>@drawable/bung_tomo</item>
+        <item>@drawable/minimalist</item>
+        <item>@drawable/pozemka</item>
         <item>@drawable/gatot_subroto</item>
         <item>@drawable/ki_hadjar_dewantara</item>
         <item>@drawable/mohammad_hatta</item>
@@ -87,8 +88,8 @@
     </integer-array>
     <integer-array name="data_photo_faction">
         <item>@drawable/rhodes</item>
-        <item>@drawable/ahmad_yani</item>
-        <item>@drawable/bung_tomo</item>
+        <item>@drawable/sargon</item>
+        <item>@drawable/rhodes</item>
         <item>@drawable/gatot_subroto</item>
         <item>@drawable/ki_hadjar_dewantara</item>
         <item>@drawable/mohammad_hatta</item>
@@ -98,8 +99,8 @@
     </integer-array>
     <integer-array name="data_full_photo">
         <item>@drawable/fcantabile</item>
-        <item>@drawable/ahmad_yani</item>
-        <item>@drawable/bung_tomo</item>
+        <item>@drawable/fminimalist</item>
+        <item>@drawable/fpozemka</item>
         <item>@drawable/gatot_subroto</item>
         <item>@drawable/ki_hadjar_dewantara</item>
         <item>@drawable/mohammad_hatta</item>
@@ -109,8 +110,8 @@
     </integer-array>
     <integer-array name="data_photo_class">
         <item>@drawable/class_vanguard</item>
-        <item>@drawable/ahmad_yani</item>
-        <item>@drawable/bung_tomo</item>
+        <item>@drawable/class_caster</item>
+        <item>@drawable/class_sniper</item>
         <item>@drawable/gatot_subroto</item>
         <item>@drawable/ki_hadjar_dewantara</item>
         <item>@drawable/mohammad_hatta</item>
