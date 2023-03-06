@@ -7,7 +7,7 @@
     tools:context=".DetailActivity">
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
-      android:id="@+id/fabShare"
+      android:id="@+id/action_share"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
@@ -78,9 +78,11 @@
               android:fontFamily="@font/nunito_bold" />
 
             <TextView
-                android:id="@+id/operatorClass"
+                android:id="@+id/operator_archetype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/nunito_reguler"
                 tools:text="Agent"/>
           <TextView
@@ -90,13 +92,62 @@
               android:textSize="18sp"
               android:textColor="@color/black"
               android:fontFamily="@font/nunito_bold" />
-
           <TextView
-              android:id="@+id/operatorTrait"
+              android:id="@+id/operator_traits"
               android:layout_width="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="16dp"
               android:layout_height="wrap_content"
               android:fontFamily="@font/nunito_reguler"
               tools:text="Has reduced Redeployment Time, can use ranged attacks"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Description"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/nunito_bold" />
+          <TextView
+              android:id="@+id/operator_description"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/nunito_reguler"
+              tools:text="A woman who grew up in the midst of disorder, with hopes of seeking a new direction here."/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Operator Overview"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/nunito_bold" />
+          <TextView
+              android:id="@+id/operator_overview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/nunito_reguler"
+              tools:text="Cantabile is extremely tight-lipped about her past, and most of the information about her is sealed in Rhodes Island’s records. Despite her best efforts, however, some clear indications slip out—for example, she had a panic attack upon seeing children playing with Metal Crab pets because she thought the children would be instructed to kill their pets later down the line. Thankfully, being part of Rhodes Island has been therapeutic for her, and she has even adopted a Metal Crab of her own!\n\nDespite being opposed to violence, Cantabile has decided Rhodes Island is worth fighting for, so she has agreed to deploy as the first 5* Agent Vanguard. This archetype is deployed on ground tiles but has ranged attacks (albeit in a rather short 1x2 range) and has greatly reduced redeployment time. Cantabile’s specialty is gaining DP when she attacks, but only while her Skills are active.\n\nThere is an interesting push and pull at play with Cantabile’s Talent, All-Rounder, which gives her bonus ATK when Blocking an enemy and bonus ASPD when she isn’t. This may not seem like a large difference, but it stands out when you look at her Skills. Her S1, Bystander, gives Cantabile a large ATK buff for several seconds upon deployment and—more notably—causes her to generate DP with every attack she makes for the duration. As such, when using Bystander, Cantabile wants to make sure she isn’t Blocking anything. Bonus ASPD means more attacks in the duration, which means more DP.\n\nOn the other hand, Cantabile’s Fleeting Light S2 is a manually activated Skill that runs on the ammo system. It gives Cantabile a much lower ATK buff, but also gives her bonus ASPD and Camouflage, while still generating DP with each attack. Because Fleeting Light runs on ammo, the All-Rounder ASPD buff is much less important; she’ll generate DP more quickly with faster attacks, but she won’t actually generate more DP. (On the other hand, Cantabile has low DEF and loses Camouflage while Blocking, so she may still want to stay out of direct combat for the duration.)\n\nCantabile may not sound that impressive on paper, but her various attributes are more than the sum of her parts. The keyword here is “versatile.” Cantabile’s attacks are fast (especially with Fleeting Light) and reasonably strong (especially with Bystander), and she can hit flying enemies. She generates DP very quickly so long as there are enemies for her to attack, and afterwards she can serve in a fast-redeploy role (soaking enemy abilities, changing positions rapidly, etc.) while still gathering more DP along the way.\n\nThe “as long as there are enemies for her to attack” part may sound like an issue, but in practice it’s remarkably lenient. Cantabile doesn’t have to kill her target to gain DP—she just needs to attack—and because Fleeting Light uses ammo, she doesn’t even have a time limit on her DP generation. (Bystander does have limitations, since it doesn’t use ammo and can only be triggered once per deployment, but the instant activation and high ATK buff can still be useful in some situations.) Cantabile wouldn’t be alive today if she wasn’t a flexible and adaptive person, and she delivers these qualities in spades when working in the Doctor’s service."/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Reference"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/nunito_bold" />
+          <TextView
+              android:id="@+id/operator_reference"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="16dp"
+              android:clickable="true"
+              android:focusable="true"
+              android:textColor="@color/link"
+              android:fontFamily="@font/nunito_reguler"
+              tools:text="https://gamepress.gg/arknights/operator/cantabile"/>
         </LinearLayout>
 
       </LinearLayout>

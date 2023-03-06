@@ -10,5 +10,9 @@ data class Operator(
     val photo: Int,
     val faction: Int,
     val fullPhoto: Int,
-    val operatorClass: Int
+    val operatorClass: Int,
+    val archetype:String,
+    val traits:String,
+    val operatorOverview:String,
+    val reference:String
 ) : Parcelable
